@@ -1,4 +1,8 @@
-# InstallVM_arch
+# Arch
+
+## Useful Links
+
+- [VMware/Install Arch Linux as a guest](https://wiki.archlinux.org/title/VMware/Install_Arch_Linux_as_a_guest)
 
 ## Installation
 
@@ -29,7 +33,7 @@ systemctl enable systemd-networkd
 ## Post Installation
 
 - [Sudo](https://wiki.archlinux.org/title/sudo)
-- [Pacman](https://wiki.archlinux.org/title/pacman)
+- [Pacman] (https://wiki.archlinux.org/title/pacman)
 - [AUR](https://wiki.archlinux.org/title/Arch_User_Repository)
 
 
@@ -38,7 +42,7 @@ systemctl enable systemd-networkd
 ### Some important packages
 
 ```
-pacman -S git rustup
+pacman -S git rustup curl net-tools open-vm-tools xf86-input-vmmouse xf86-video-vmware mesa man-db man-pages firefox
 ```
 
 #### Guides
@@ -60,6 +64,11 @@ pacman -S git rustup
 [Arch i3 wiki](https://wiki.archlinux.org/title/i3), [i3 homepage](https://i3wm.org)
 
 - `pacman -S i3 dmenu`
+- 
+To get vmware copy&paste working, edit `~/.config/i3/config`and append:
+```
+exec --no-startup-id vmware-user
+```
 
 ### Alacritty
 
@@ -67,6 +76,7 @@ pacman -S git rustup
 
 ### Zsh
 - `pacman -S zsh`
+- [Oh My ZSH!](https://ohmyz.sh/#install)
 
 ### Tmux
 
