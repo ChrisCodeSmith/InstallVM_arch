@@ -64,7 +64,7 @@ pacman -S git rustup curl net-tools open-vm-tools xf86-input-vmmouse xf86-video-
 [Arch i3 wiki](https://wiki.archlinux.org/title/i3), [i3 homepage](https://i3wm.org)
 
 - `pacman -S i3 dmenu`
-- 
+
 To get vmware copy&paste working, edit `~/.config/i3/config`and append:
 ```
 exec --no-startup-id vmware-user
