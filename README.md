@@ -29,7 +29,7 @@ systemctl enable systemd-networkd
 ## Post Installation
 
 - [Sudo](https://wiki.archlinux.org/title/sudo)
-- [Pacman] (https://wiki.archlinux.org/title/pacman)
+- [Pacman](https://wiki.archlinux.org/title/pacman)
 - [AUR](https://wiki.archlinux.org/title/Arch_User_Repository)
 
 
