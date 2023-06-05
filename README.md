@@ -72,14 +72,24 @@ exec --no-startup-id vmware-user
 
 ### Alacritty
 
-- `pacman -S alacritty`
+`pacman -S alacritty`
 
 ### Zsh
-- `pacman -S zsh`
+`pacman -S zsh`
+
 - [Oh My ZSH!](https://ohmyz.sh/#install)
 
 ### Tmux
 
-- `pacman -S tmux`
+`pacman -S tmux`
 
 ### Neovim
+
+```
+pacman -S nvim
+```
+
+#### Packer Plugins
+
+- [packer](https://github.com/wbthomason/packer.nvim): Plugin Manager
+- [telescope](https://github.com/nvim-telescope/telescope.nvim): Fuzzy Finder
