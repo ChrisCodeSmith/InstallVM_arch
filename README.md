@@ -58,7 +58,10 @@ pacman -S git rustup curl net-tools open-vm-tools xf86-input-vmmouse xf86-video-
 #### Display Manager(/greeter):
 
 - Lemurs: Get it via AUR: [lemurs-git](https://aur.archlinux.org/packages/lemurs-git) 
-- See [official git repo](https://github.com/coastalwhite/lemurs) for further instructions
+- See [official git repo](https://github.com/coastalwhite/lemurs) for further instructions\
+- To get rid of annoying dmesg notifications loading after lemurs started, disable bluetooth  
+ and blacklist the `i2c_piix4` module by writing `blacklist i2c_piix4` in 
+ `/etc/modprobe.d/blacklist.conf`
 
 #### Window Manager: i3
 [Arch i3 wiki](https://wiki.archlinux.org/title/i3), [i3 homepage](https://i3wm.org)
@@ -86,10 +89,14 @@ exec --no-startup-id vmware-user
 ### Neovim
 
 ```
-pacman -S nvim
+pacman -S nvim ripgrep
 ```
 
 #### Packer Plugins
 
 - [packer](https://github.com/wbthomason/packer.nvim): Plugin Manager
-- [telescope](https://github.com/nvim-telescope/telescope.nvim): Fuzzy Finder
+- [telescope](https://github.com/nvim-telescope/telescope.nvim): Fuzzy Finder ( we use ripgrep with it )
+- [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [harpoon](https://github.com/ThePrimeagen/harpoon)
+- [undotree](https://github.com/mbbill/undotree)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
